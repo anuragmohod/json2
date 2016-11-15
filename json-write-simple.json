@@ -1,0 +1,13 @@
+{
+    "firstName" : "haaahhhh",
+    "lastName" : "hmmmmm",
+    "age" : 78,
+    "married" : true,
+    "hobbies" : null,
+    "experience" : ["C", "Javascript","angular"],
+    "address": {
+        "street": "some fucker saint st",
+        "state": "haaa",
+        "post": 34343
+    }
+}
