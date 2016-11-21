@@ -1,0 +1,32 @@
+{
+    "Inspirational" : [{"title":"The Power of Positive thinking", "author":"Norman Dickfuck","price":9.03},
+    {"title":"The power of not thinking at all", "author":"some dumbfuck","price":0.002},
+    {"title":"Third stupid book", "author":"whogivesafuk", "price":34}
+    ],
+    "IT":[{
+        "title":"The power of",
+        "author":"Norman formal",
+        "price":0.002
+    },{
+        "title":"The power of not thinking nigga",
+        "author": "poor nigga",
+        "price":34
+    },{
+        "title":"a niggas life",
+        "author":"babcok",
+        "price":282
+    }],
+    "Children's":[{
+        "title":"how to make babies",
+        "author":"harry potter",
+        "price": 89
+    },{
+        "title":"kids guide to dating",
+        "author":"kidophile",
+        "price":03
+    },{
+        "title":"how not to get caught",
+        "author":"ha",
+        "price":90
+    }]
+}
