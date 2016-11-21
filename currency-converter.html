@@ -3,23 +3,41 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Currency Converter</title>
+	<style>
+		#box{
+			width: 500px;
+			height: 150px;
+			margin: 0px auto;
+			border: 2px solid black;
+			box-sizing: border-box;
+		}
+		
+		h2 {
+			text-align: center;
+		}
+		table{
+			margin: 0px auto;
+		}
+	
+	</style>
+	
 </head>
-<body>
+<body onload="convertCurrency();">
 	<div id="box">
 		<h2>Currency Converter</h2>
 		<table>
 			<tr>
 				<td>
-					<input type="text" id="fromAmount" />
+					<input type="text" id="fromAmount" size="15" value="1" onkeyup="convertCurrency();"/>
 				</td>
 				<td>
-					<select id="from">
+					<select id="from" onChange="convertCurrency();">
 						<option value="EUR"> Euro (EUR)</option>
 						<option value="AUD">Australian Dollar (AUD)</option>
 						<option value="ARS">Argentine Peso (ARS)</option>
 						<option value="DZD">Algerian Dinar (DZD)</option>
 						<option value="BMD">Bermudian Dollar (BMD)</option>
-						<option value="USD">US Dollars (USD)</option>
+						<option value="USD" selected>US Dollars (USD)</option>
 						<option value="GGP">Pound Sterling (GGP)</option>
 
 						<option value="IRR">Iranian Rial (IRR)</option>
@@ -27,23 +45,23 @@
 						<option value="JPY">Japanese Yen (JPY)</option>
 						<option value="KZT">Kazakhstan Tenge (KZT)</option>
 						<option value="KES">Kenyan Shilling (KES)</option>
-						<option value="INR" selected>Indian Rupee (INR)</option>
+						<option value="INR">Indian Rupee (INR)</option>
 						
 					</select>
 				</td>
 			</tr>
 			<tr>
 				<td>
-					<input type="text" id="toAmount">
+					<input type="text" id="toAmount" size="15" disabled>
 				</td>
 				<td>
-					<select id="to">
+					<select id="to" onChange="convertCurrency();">
 							<option value="EUR"> Euro (EUR)</option>
 							<option value="AUD">Australian Dollar (AUD)</option>
 							<option value="ARS">Argentine Peso (ARS)</option>
 							<option value="DZD">Algerian Dinar (DZD)</option>
 							<option value="BMD">Bermudian Dollar (BMD)</option>
-							<option value="USD" selected>US Dollars (USD)</option>
+							<option value="USD">US Dollars (USD)</option>
 							<option value="GGP">Pound Sterling (GGP)</option>
 
 							<option value="IRR">Iranian Rial (IRR)</option>
@@ -51,12 +69,13 @@
 							<option value="JPY">Japanese Yen (JPY)</option>
 							<option value="KZT">Kazakhstan Tenge (KZT)</option>
 							<option value="KES">Kenyan Shilling (KES)</option>
-							<option value="INR">Indian Rupee (INR)</option>
+							<option value="INR" selected>Indian Rupee (INR)</option>
 
 						</select>
 				</td>
 			</tr>
 		</table>
 	</div>
+	<script src="curr.js"></script>
 </body>
 </html>	
